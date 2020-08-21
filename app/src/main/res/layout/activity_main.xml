@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+ <LinearLayout
+     android:clipToPadding="false"
+     android:gravity="center"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <androidx.cardview.widget.CardView
+      android:foreground="?android:attr/selectableItemBackground"
+      android:clickable="true"
+      android:layout_width="340dp"
+      android:layout_height="120dp"
+      android:layout_margin="10dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center">
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_baseline_emoji_emotions"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Random Picker"/>
+   </LinearLayout>
+  </androidx.cardview.widget.CardView>
+ </LinearLayout>
+
+ <LinearLayout
+     android:clipToPadding="false"
+     android:gravity="center"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/grupbaru"
+      android:foreground="?android:attr/selectableItemBackground"
+      android:clickable="true"
+      android:layout_width="160dp"
+      android:layout_height="190dp"
+      android:layout_margin="10dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center">
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/cerclebackgroundpurple"
+        android:src="@drawable/group"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Buat Grup Baru"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Buat Anggota Grup Baru Disini"
+        android:padding="5dp"
+        android:textColor="@android:color/darker_gray"/>
+
+   </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/pilihcepat"
+      android:foreground="?android:attr/selectableItemBackground"
+      android:clickable="true"
+      android:layout_width="160dp"
+      android:layout_height="190dp"
+      android:layout_margin="10dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center">
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/cerclebackgroundpink"
+        android:src="@drawable/ic_baseline_format_list_numbered_24"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Pilih Cepat"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Penggil Berdasarkan Nomor Absen"
+        android:padding="5dp"
+        android:textColor="@android:color/darker_gray"/>
+   </LinearLayout>
+  </androidx.cardview.widget.CardView>
+ </LinearLayout>
+
+ <LinearLayout
+     android:clipToPadding="false"
+     android:gravity="center"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/grupcepat"
+      android:foreground="?android:attr/selectableItemBackground"
+      android:clickable="true"
+      android:layout_width="160dp"
+      android:layout_height="190dp"
+      android:layout_margin="10dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center">
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/cerclebackgroundgreen"
+        android:src="@drawable/ic_baseline_flash_on_24"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Buat Grup Cepat"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Buat Grup Dengan Dengan No Absen"
+        android:padding="5dp"
+        android:textColor="@android:color/darker_gray"/>
+
+   </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/readme"
+      android:foreground="?android:attr/selectableItemBackground"
+      android:clickable="true"
+      android:layout_width="160dp"
+      android:layout_height="190dp"
+      android:layout_margin="10dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center">
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/cerclebackgroundyello"
+        android:src="@drawable/ic_baseline_info_24"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Read Me!"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Yuk Baca Petunjuk Dahulu"
+        android:padding="5dp"
+        android:textColor="@android:color/darker_gray"/>
+   </LinearLayout>
+  </androidx.cardview.widget.CardView>
+ </LinearLayout>
+
+<!-- <LinearLayout-->
+<!--     android:clipToPadding="false"-->
+<!--     android:gravity="center"-->
+<!--     android:orientation="horizontal"-->
+<!--     android:layout_width="match_parent"-->
+<!--     android:layout_height="wrap_content">-->
+
+<!--  <androidx.cardview.widget.CardView-->
+<!--      android:id="@+id/credit"-->
+<!--      android:foreground="?android:attr/selectableItemBackground"-->
+<!--      android:clickable="true"-->
+<!--      android:layout_width="340dp"-->
+<!--      android:layout_height="160dp"-->
+<!--      android:layout_margin="10dp">-->
+<!--   <LinearLayout-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="match_parent"-->
+<!--       android:orientation="vertical"-->
+<!--       android:gravity="center"-->
+<!--       android:paddingTop="10dp">-->
+<!--    <ImageView-->
+<!--        android:layout_width="64dp"-->
+<!--        android:layout_height="64dp"-->
+<!--        android:background="@drawable/cerclebackgroundpurple"-->
+<!--        android:src="@drawable/ic_baseline_person"-->
+<!--        android:padding="10dp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="Credit"/>-->
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/lightgray"-->
+<!--        android:layout_margin="10dp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Tentang Pengembang"-->
+<!--        android:padding="5dp"-->
+<!--        android:textColor="@android:color/darker_gray"/>-->
+
+<!--   </LinearLayout>-->
+<!--  </androidx.cardview.widget.CardView>-->
+<!-- </LinearLayout>-->
+
+</LinearLayout>
+</ScrollView>
